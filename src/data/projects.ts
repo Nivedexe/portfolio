@@ -163,18 +163,14 @@ export const projects: Project[] = [
     id: 'e-rehab',
     slug: 'e-rehab',
     title: 'E-REHAB',
-    subtitle: 'Rehabilitation Management Web Application',
-    badge: 'Academic Project · IGNOU MCA',
-    category: 'Academic Project',
-    isAcademic: true,
-    academicDetails: {
-      institution: 'Indira Gandhi National Open University (IGNOU)',
-      program: 'Master of Computer Applications (MCA)',
-    },
-    role: 'Full-Stack Developer (Academic Project)',
-    duration: 'MCA Capstone Project',
+    subtitle: 'Rehabilitation & Healthcare Management Web Application',
+    badge: 'Full-Stack Web Application',
+    category: 'Full-Stack Web App',
+    isFullStack: true,
+    role: 'Full-Stack Developer',
+    duration: 'Full-Stack Web Platform',
     overview:
-      'A full-stack rehabilitation management web application designed and built as an MCA academic project. It streamlines beneficiary care through user management, peer meetings, convention scheduling, self-assessment scoring, sobriety tracking milestones, feedback collection, and administrator governance.',
+      'A comprehensive full-stack rehabilitation management web application engineered for structured beneficiary care, peer recovery meetings, convention scheduling, confidential self-assessment scoring, sobriety tracking milestones, feedback collection, and administrator governance.',
     problem:
       'Rehabilitation facilities and support communities frequently rely on disparate, non-standardized communication channels and paper milestone sheets, leading to high drop-out rates and lack of continuous peer accountability. This project addresses these gaps with a structured, role-based platform that tracks participant journeys with dignity and privacy.',
     technologies: [
@@ -231,8 +227,8 @@ export const projects: Project[] = [
       'Enforcing strict data access boundaries so beneficiaries can only access their individual self-assessments while counselors review assigned cases.',
     ],
     outcome: [
-      'Successfully fulfilled all rigorous academic requirements for the IGNOU MCA curriculum.',
       'Delivered a complete, demonstrable end-to-end full-stack web application with relational database persistence.',
+      'Implemented robust Role-Based Access Control and authentication securing sensitive patient recovery records.',
     ],
     screenshots: [
       {

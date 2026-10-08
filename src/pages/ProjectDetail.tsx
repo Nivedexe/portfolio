@@ -8,7 +8,6 @@ import {
   AlertTriangle,
   Award,
   Film,
-  BookOpen,
 } from 'lucide-react';
 import { projects } from '../data/projects';
 import { DoodleUnderline } from '../components/doodles/DoodleUnderline';
@@ -99,7 +98,7 @@ export const ProjectDetail: React.FC = () => {
             <div>
               <span className="text-[#5F5F5F] block mb-1 uppercase text-[11px]">Type / Context:</span>
               <span className="font-bold text-[#171717]">
-                {project.isAcademic ? 'IGNOU MCA Degree' : 'Enterprise Production'}
+                {project.category}
               </span>
             </div>
             <div>
@@ -125,21 +124,6 @@ export const ProjectDetail: React.FC = () => {
               </span>
               <p className="text-[#5F5F5F] leading-relaxed">
                 {project.confidentialNotice}
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Academic Project Clear Banner if applicable */}
-        {project.isAcademic && (
-          <div className="mb-12 p-5 bg-[#FEF9C3] sketch-border flex items-start gap-3 text-sm text-[#171717]">
-            <BookOpen className="w-6 h-6 text-[#171717] shrink-0 mt-0.5" />
-            <div>
-              <span className="font-bold uppercase tracking-wider block mb-1">
-                Academic MCA Capstone Project — IGNOU
-              </span>
-              <p className="text-xs sm:text-sm text-[#5F5F5F] leading-relaxed">
-                Developed as the Master of Computer Applications (MCA) degree project for Indira Gandhi National Open University. Built from scratch with React, Vite, Node.js, Express, and MySQL. This project represents independent full-stack academic software engineering rather than commercial employment.
               </p>
             </div>
           </div>

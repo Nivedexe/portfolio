@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Building2 } from 'lucide-react';
+import { ArrowRight, Building2 } from 'lucide-react';
 import type { Project } from '../../types';
 import { DoodleArrow } from '../doodles/DoodleArrow';
 import { FallbackImage } from '../common/FallbackImage';
@@ -26,11 +26,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, indexNumber }
             </span>
           </div>
 
-          {/* Academic or Enterprise Badge */}
-          {project.isAcademic ? (
+          {/* Category Badge */}
+          {project.isFullStack ? (
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 text-[11px] font-mono font-bold bg-[#FEF08A] text-[#171717] rounded-sm border border-[#222222]">
-              <BookOpen className="w-3 h-3 text-[#171717]" />
-              ACADEMIC &middot; MCA
+              FULL-STACK
             </span>
           ) : (
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 text-[11px] font-mono font-bold bg-[#F8F6F0] text-[#171717] rounded-sm border border-[#222222]/40">

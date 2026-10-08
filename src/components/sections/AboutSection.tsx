@@ -116,8 +116,8 @@ export const AboutSection: React.FC = () => {
                   <span className="font-bold text-right text-[#D9532F]">ShipPro PMS</span>
                 </li>
                 <li className="flex items-start justify-between gap-2">
-                  <span className="text-[#5F5F5F]">Education:</span>
-                  <span className="font-bold text-right">IGNOU MCA</span>
+                  <span className="text-[#5F5F5F]">Full-Stack:</span>
+                  <span className="font-bold text-right">E-REHAB Web App</span>
                 </li>
               </ul>
 

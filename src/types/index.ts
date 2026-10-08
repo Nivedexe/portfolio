@@ -19,12 +19,9 @@ export interface Project {
   subtitle: string;
   badge?: string;
   featured?: boolean;
-  category: 'Enterprise / Maritime' | 'Academic Project' | 'Business Application';
+  category: 'Enterprise / Maritime' | 'Full-Stack Web App' | 'Business Application';
+  isFullStack?: boolean;
   isAcademic?: boolean;
-  academicDetails?: {
-    institution: string;
-    program: string;
-  };
   confidential?: boolean;
   confidentialNotice?: string;
   role: string;

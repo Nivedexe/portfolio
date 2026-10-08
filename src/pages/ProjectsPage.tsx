@@ -21,8 +21,8 @@ export const ProjectsPage: React.FC = () => {
         <SectionTitle
           number="02"
           title="All Projects &amp; Case Studies"
-          annotation="real enterprise systems & academic capstone ✎"
-          subtitle="Explore deep-dive case studies covering enterprise maritime workflows, certificate verification, academic full-stack systems, and business billing interfaces."
+          annotation="real enterprise systems & full-stack web applications ✎"
+          subtitle="Explore deep-dive case studies covering enterprise maritime workflows, certificate verification, full-stack web platforms, and business billing interfaces."
         />
 
         {/* Category Filters */}
@@ -33,7 +33,7 @@ export const ProjectsPage: React.FC = () => {
           {[
             { label: 'All Projects', value: 'all' },
             { label: 'Enterprise / Maritime', value: 'maritime' },
-            { label: 'Academic (IGNOU MCA)', value: 'academic' },
+            { label: 'Full-Stack Web Apps', value: 'full-stack' },
             { label: 'Business Applications', value: 'business' },
           ].map((cat) => (
             <button
