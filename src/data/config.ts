@@ -1,5 +1,8 @@
 import type { PersonalConfig } from '../types';
 
+const baseUrl = import.meta.env.BASE_URL || './';
+const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+
 export const personalConfig: PersonalConfig = {
   name: 'Nived Krishna',
   title: 'Software Engineer',
@@ -10,7 +13,8 @@ export const personalConfig: PersonalConfig = {
   email: 'nived.exe@gmail.com',
   githubUrl: 'https://github.com/Nivedexe',
   linkedinUrl: 'https://linkedin.com/in/nivedkrishna', // Placeholder: [YOUR LINKEDIN]
-  resumeUrl: '/resume.pdf', // Points to public/resume.pdf
+  resumeUrl: `${cleanBase}resume/resume.pdf`, // Points to public/resume/resume.pdf
+  resumeDownloadName: 'Nived_Krishna_Resume.pdf',
   
   bioShort:
     'Software Engineer with approximately 4 years of experience specializing in React, TypeScript, and modern UI engineering. Focused on designing complex interfaces, workflows, data-heavy screens, and reusable UI architectures for enterprise and maritime applications.',

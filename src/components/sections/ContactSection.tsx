@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, FileText, Copy, Check, ArrowUpRight } from 'lucide-react';
+import { Mail, FileText, Copy, Check, ArrowUpRight, Download } from 'lucide-react';
 import { personalConfig } from '../../data/config';
 import { SectionTitle } from '../common/SectionTitle';
 import { DoodleStar } from '../doodles/DoodleStar';
@@ -112,15 +112,15 @@ export const ContactSection: React.FC = () => {
 
                 <a
                   href={personalConfig.resumeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  download={personalConfig.resumeDownloadName || 'Nived_Krishna_Resume.pdf'}
                   className="flex items-center justify-between p-2.5 bg-white rounded sketch-border-subtle hover:bg-[#FEF08A] transition-colors"
+                  title="Download Nived Krishna's Resume"
                 >
                   <div className="flex items-center gap-2 text-xs font-bold text-[#171717]">
                     <FileText className="w-4 h-4 text-[#D9532F]" />
                     <span>Resume (PDF)</span>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-[#5F5F5F]" />
+                  <Download className="w-4 h-4 text-[#5F5F5F]" />
                 </a>
               </div>
 

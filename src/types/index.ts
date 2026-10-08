@@ -82,6 +82,7 @@ export interface PersonalConfig {
   githubUrl: string;
   linkedinUrl: string;
   resumeUrl: string;
+  resumeDownloadName?: string;
   bioShort: string;
   bioExtended: string;
 }

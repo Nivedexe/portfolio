@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, ArrowUpRight, FileText } from 'lucide-react';
+import { Menu, X, FileText, Download } from 'lucide-react';
 import { personalConfig } from '../../data/config';
 import { DoodleUnderline } from '../doodles/DoodleUnderline';
 
@@ -115,13 +115,13 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-4">
           <a
             href={personalConfig.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            download={personalConfig.resumeDownloadName || 'Nived_Krishna_Resume.pdf'}
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-[#171717] bg-white sketch-border sketch-shadow-sm hover:translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0px_#222222] hover:bg-[#FEF08A] transition-all cursor-pointer"
+            title="Download Nived Krishna's Resume"
           >
             <FileText className="w-3.5 h-3.5 text-[#D9532F]" />
             <span>Resume</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-[#171717]" />
+            <Download className="w-3.5 h-3.5 text-[#171717]" />
           </a>
         </div>
 
@@ -129,12 +129,12 @@ export const Navbar: React.FC = () => {
         <div className="flex md:hidden items-center gap-2">
           <a
             href={personalConfig.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            download={personalConfig.resumeDownloadName || 'Nived_Krishna_Resume.pdf'}
             className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-bold text-[#171717] bg-white sketch-border sketch-shadow-sm mr-1"
+            title="Download Resume"
           >
+            <Download className="w-3 h-3 text-[#D9532F]" />
             <span>Resume</span>
-            <ArrowUpRight className="w-3 h-3" />
           </a>
           <button
             type="button"
@@ -167,11 +167,11 @@ export const Navbar: React.FC = () => {
               </span>
               <a
                 href={personalConfig.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold bg-[#FEF08A] text-[#171717] sketch-border"
+                download={personalConfig.resumeDownloadName || 'Nived_Krishna_Resume.pdf'}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-[#FEF08A] text-[#171717] sketch-border"
               >
-                Download Resume ↗
+                <Download className="w-3.5 h-3.5 text-[#D9532F]" />
+                Download Resume
               </a>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { personalConfig } from '../data/config';
 import { ExperienceTimeline } from '../components/sections/ExperienceTimeline';
 import { ApproachSection } from '../components/sections/ApproachSection';
 import { DoodleArrow } from '../components/doodles/DoodleArrow';
-import { FileText, ArrowUpRight, Laptop } from 'lucide-react';
+import { FileText, Download, Laptop } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   return (
@@ -40,13 +40,13 @@ export const AboutPage: React.FC = () => {
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <a
                 href={personalConfig.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                download={personalConfig.resumeDownloadName || 'Nived_Krishna_Resume.pdf'}
                 className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#171717] text-[#F8F6F0] font-bold text-xs uppercase tracking-wider sketch-border sketch-shadow hover:bg-[#D9532F] transition-all cursor-pointer"
+                title="Download Nived Krishna's Resume"
               >
-                <FileText className="w-4 h-4 text-[#D9532F]" />
+                <FileText className="w-4 h-4 text-[#FEF08A]" />
                 <span>Download Resume (PDF)</span>
-                <ArrowUpRight className="w-4 h-4 text-white" />
+                <Download className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>

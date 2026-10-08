@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUp, Mail, FileText } from 'lucide-react';
+import { ArrowUp, Mail, Download } from 'lucide-react';
 import { personalConfig } from '../../data/config';
 import { DoodleStar } from '../doodles/DoodleStar';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
@@ -94,11 +94,11 @@ export const Footer: React.FC = () => {
               </a>
               <a
                 href={personalConfig.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                download={personalConfig.resumeDownloadName || 'Nived_Krishna_Resume.pdf'}
                 className="inline-flex items-center gap-2 text-[#171717] hover:text-[#D9532F] transition-colors"
+                title="Download Nived Krishna's Resume"
               >
-                <FileText className="w-4 h-4 text-[#D9532F]" />
+                <Download className="w-4 h-4 text-[#D9532F]" />
                 <span>Download Resume (PDF)</span>
               </a>
             </div>

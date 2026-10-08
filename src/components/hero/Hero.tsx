@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 import { personalConfig } from '../../data/config';
 import { DoodleArrow } from '../doodles/DoodleArrow';
 import { DoodleCircle } from '../doodles/DoodleCircle';
@@ -88,12 +88,12 @@ export const Hero: React.FC = () => {
                 {/* Secondary Button */}
                 <a
                   href={personalConfig.resumeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  download={personalConfig.resumeDownloadName || 'Nived_Krishna_Resume.pdf'}
                   className="group inline-flex items-center gap-2 px-6 py-3.5 bg-white text-[#171717] font-bold text-sm tracking-wider uppercase sketch-border sketch-shadow-sm hover:bg-[#FEF08A] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0px_#222222] transition-all cursor-pointer"
+                  title="Download Nived Krishna's Resume"
                 >
                   <span>Download Resume</span>
-                  <ArrowUpRight className="w-4 h-4 text-[#D9532F] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <Download className="w-4 h-4 text-[#D9532F] group-hover:translate-y-0.5 transition-transform" />
                 </a>
               </div>
 
