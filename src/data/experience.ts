@@ -1,0 +1,55 @@
+import type { ExperienceItem } from '../types';
+
+export const experiences: ExperienceItem[] = [
+  {
+    id: 'exp-current',
+    period: '2022 — Present (~4 Years)',
+    title: 'Software Engineer / Frontend Engineer',
+    role: 'Frontend Engineering & Enterprise Systems',
+    companyPlaceholder: '[Enterprise Software Company / Maritime Solutions]',
+    context: 'Enterprise & Maritime Fleet Management Applications',
+    isCurrent: true,
+    doodleNote: 'active focus · enterprise scale',
+    highlights: [
+      'Served as a core frontend engineer developing ShipPro PMS, an enterprise-grade Planned Maintenance System deployed for commercial fleet management.',
+      'Designed and engineered critical modules: Equipment Hierarchy Tree, Planned Maintenance Schedules, Job Assignment Queues, and Spare Parts Inventory.',
+      'Built high-density operational data tables featuring multi-column sorting, facet filtering, custom column views, and batch status mutations.',
+      'Contributed to CertPro, a maritime statutory certificate verification platform featuring digital QR-code verification workflows.',
+      'Collaborated closely with product designers, converting complex Figma design specifications into reusable, type-safe React component libraries.',
+      'Integrated REST APIs with .NET backend services, handling data caching, optimistic UI updates, and error resilience.',
+    ],
+    technologies: ['React', 'TypeScript', 'JavaScript', '.NET (REST APIs)', 'Tailwind CSS', 'Figma', 'Git'],
+  },
+  {
+    id: 'exp-business',
+    period: 'Professional Projects',
+    title: 'UI Engineer',
+    role: 'Web Application Development',
+    companyPlaceholder: '[Business & Client Engagements]',
+    context: 'Data-Heavy Business Interfaces & CRM/Billing',
+    isCurrent: false,
+    doodleNote: 'lots of dense tables & forms',
+    highlights: [
+      'Engineered interactive CRM and billing workflows for financial invoices, client transaction histories, and ledger reconciliations.',
+      'Built complex dynamic form arrays with real-time tax and multi-item calculation logic.',
+      'Delivered responsive dashboard views with quick search, filtering, and export capabilities.',
+    ],
+    technologies: ['React', 'TypeScript', 'Responsive UI', 'REST APIs', 'Component Systems'],
+  },
+  {
+    id: 'exp-academic',
+    period: 'MCA Graduation',
+    title: 'Master of Computer Applications (MCA)',
+    role: 'Academic Qualification',
+    companyPlaceholder: 'Indira Gandhi National Open University (IGNOU)',
+    context: 'Advanced Computing, Software Architecture & Database Systems',
+    isCurrent: false,
+    doodleNote: 'academic capstone project',
+    highlights: [
+      'Successfully completed post-graduate degree in Computer Applications.',
+      'Designed and developed E-REHAB: a full-stack rehabilitation management web application with React, Node.js, Express, Sequelize, and MySQL.',
+      'Architected relational database schemas, role-based access control (RBAC), and JWT authentication pipelines.',
+    ],
+    technologies: ['React', 'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'JWT', 'BcryptJS'],
+  },
+];

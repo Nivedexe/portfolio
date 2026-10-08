@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #F8F6F0;
+    --text-primary: #171717;
+    --text-secondary: #5F5F5F;
+    --border-ink: #222222;
+    --accent-ink: #D9532F;
+    --accent-hover: #C04220;
+    --highlighter-yellow: #FEF08A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-paper);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar matching sketchbook theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F1EEDD;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #444444;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222222;
+  }
+}
+
+.font-handwritten {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Subtle graph / sketchbook paper background */
+.paper-grid {
+  background-color: #F8F6F0;
+  background-image: 
+    linear-gradient(to right, rgba(34, 34, 34, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 34, 34, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.paper-dots {
+  background-color: #F8F6F0;
+  background-image: radial-gradient(rgba(34, 34, 34, 0.1) 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Authentic hand-drawn sketch borders using CSS border-radius irregularities */
+.sketch-border {
+  border: 2px solid #222222;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.sketch-border-subtle {
+  border: 1.5px solid #222222;
+  border-radius: 250px 10px 240px 8px/8px 240px 10px 250px;
+}
+
+.sketch-border-dashed {
+  border: 2px dashed #333333;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/* Sketch paper drop shadows */
+.sketch-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #222222;
+}
+
+.sketch-shadow {
+  box-shadow: 4px 4px 0px 0px #222222;
+}
+
+.sketch-shadow-lg {
+  box-shadow: 6px 6px 0px 0px #222222;
+}
+
+.sketch-shadow-accent {
+  box-shadow: 4px 4px 0px 0px #D9532F;
+}
+
+.sketch-card-hover {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sketch-card-hover:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px 0px #222222;
+}
+
+/* Handwritten highlighter marker effect */
+.sketch-highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.sketch-highlight::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 2px;
+  height: 40%;
+  background-color: #FEF08A;
+  z-index: -1;
+  transform: rotate(-0.5deg);
+  border-radius: 2px;
+}
+
+.sketch-highlight-accent::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 2px;
+  height: 35%;
+  background-color: rgba(217, 83, 47, 0.2);
+  z-index: -1;
+  transform: rotate(0.4deg);
+  border-radius: 2px;
+}
+
+/* Tape effect for notebook cards */
+.sketch-tape {
+  position: relative;
+}
+.sketch-tape::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 70px;
+  height: 22px;
+  background-color: rgba(230, 225, 205, 0.7);
+  border: 1px dashed rgba(34, 34, 34, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}

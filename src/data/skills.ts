@@ -1,0 +1,66 @@
+import type { SkillCategory } from '../types';
+
+export const skillCategories: SkillCategory[] = [
+  {
+    id: 'frontend',
+    title: 'Frontend Engineering',
+    description: 'Core focus: building resilient, high-performance web applications and enterprise workflows.',
+    doodleAnnotation: 'my main playground ✦',
+    skills: [
+      { name: 'React', highlight: true, tag: 'Core' },
+      { name: 'TypeScript', highlight: true, tag: 'Core' },
+      { name: 'JavaScript (ES6+)', highlight: true, tag: 'Core' },
+      { name: 'Tailwind CSS', highlight: true, tag: 'Styling' },
+      { name: 'HTML5 & Semantic Web', highlight: false },
+      { name: 'CSS3 / Modern Layouts', highlight: false },
+      { name: 'Vite', highlight: true, tag: 'Tooling' },
+      { name: 'Responsive Design', highlight: false },
+      { name: 'Component-Based Architecture', highlight: false },
+      { name: 'Complex Data Tables', highlight: true, tag: 'Specialty' },
+      { name: 'UI / UX Implementation', highlight: false },
+      { name: 'State Management', highlight: false },
+    ],
+  },
+  {
+    id: 'backend',
+    title: 'Backend & APIs',
+    description: 'Integrating client interfaces with robust server architectures and RESTful endpoints.',
+    doodleAnnotation: 'clean contracts & data flows',
+    skills: [
+      { name: 'REST APIs', highlight: true, tag: 'Core' },
+      { name: 'Node.js', highlight: true, tag: 'Runtime' },
+      { name: 'Express.js', highlight: false },
+      { name: '.NET (API Consumption)', highlight: true, tag: 'Enterprise' },
+      { name: 'JSON & API Modeling', highlight: false },
+      { name: 'JWT Authentication', highlight: false },
+      { name: 'Role-Based Access Control', highlight: false },
+    ],
+  },
+  {
+    id: 'database',
+    title: 'Databases & ORM',
+    description: 'Relational data modeling, query optimization, and structured ORM layers.',
+    doodleAnnotation: 'structured persistence',
+    skills: [
+      { name: 'MySQL', highlight: true, tag: 'Relational' },
+      { name: 'Sequelize ORM', highlight: true, tag: 'ORM' },
+      { name: 'Relational Schema Design', highlight: false },
+      { name: 'Parameterized Queries', highlight: false },
+    ],
+  },
+  {
+    id: 'tools',
+    title: 'Tools & Workflow',
+    description: 'Modern developer toolchain, version control, design-to-code, and AI-assisted workflows.',
+    doodleAnnotation: 'daily essentials ⚙️',
+    skills: [
+      { name: 'Git & GitHub', highlight: true, tag: 'VCS' },
+      { name: 'Figma (Design-to-Code)', highlight: true, tag: 'Design' },
+      { name: 'VS Code', highlight: false },
+      { name: 'Cursor', highlight: true, tag: 'IDE' },
+      { name: 'Antigravity', highlight: true, tag: 'Agentic' },
+      { name: 'Chrome DevTools', highlight: false },
+      { name: 'Postman / API Testing', highlight: false },
+    ],
+  },
+];
