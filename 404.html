@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nived Krishna — Software Engineer</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Converts 404 URL path to hash or query parameter so client-side router can handle it
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      var repo = l.pathname.split('/')[1];
+      // If deployed under username.github.io/portfolio/, adjust path
+      var search = l.search ? l.search : '';
+      var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/#' +
+        l.pathname.slice(1) + search + l.hash;
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to requested page...</p>
+  </body>
+</html>
