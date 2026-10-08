@@ -55,11 +55,10 @@ export const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`sticky top-0 z-40 transition-all duration-200 ${
-        scrolled
+      className={`sticky top-0 z-40 transition-all duration-200 ${scrolled
           ? 'bg-[#F8F6F0]/90 backdrop-blur-md border-b border-[#222222]/15 py-3 shadow-xs'
           : 'bg-[#F8F6F0] py-4'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand / Logo */}
@@ -70,7 +69,7 @@ export const Navbar: React.FC = () => {
         >
           <div className="flex items-center gap-2">
             <span className="font-extrabold text-lg sm:text-xl tracking-tight text-[#171717] uppercase group-hover:text-[#D9532F] transition-colors">
-              NIVED KRISHNA
+              NIVED KRISHNA S
             </span>
             <span className="w-2 h-2 rounded-full bg-[#D9532F] animate-pulse" />
           </div>
@@ -91,9 +90,8 @@ export const Navbar: React.FC = () => {
                 key={link.name}
                 type="button"
                 onClick={() => handleNavClick(link)}
-                className={`relative text-sm font-semibold tracking-wide transition-colors cursor-pointer py-1 ${
-                  isActive ? 'text-[#171717]' : 'text-[#5F5F5F] hover:text-[#171717]'
-                }`}
+                className={`relative text-sm font-semibold tracking-wide transition-colors cursor-pointer py-1 ${isActive ? 'text-[#171717]' : 'text-[#5F5F5F] hover:text-[#171717]'
+                  }`}
               >
                 <span>{link.name}</span>
                 {isActive ? (
