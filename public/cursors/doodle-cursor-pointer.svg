@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <!-- Sketched 3D Shadow Base & Hatching (Hover State with Terracotta / Warm Highlight) -->
+  <path
+    d="M 24 20 L 27.5 22.5 L 25.5 33.5 L 20 37 L 18 34.5 L 12 23 L 6 26.5 L 5 24 L 7 5 L 9 5 L 24 20 Z"
+    fill="#D9532F"
+    opacity="0.12"
+  />
+
+  <!-- 3D Sketched Outer Border for the shadow -->
+  <path
+    d="M 8.5 5.5 L 25.5 20.5 L 19 20.5 L 26.5 33.5 L 21 36.5 L 13.5 24 L 7.5 27.5"
+    stroke="#D9532F"
+    stroke-width="1.3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- 3D Hatching Lines (///) on the right blade bevel -->
+  <path d="M 12 9 L 13.5 10.5" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 15 12 L 16.5 13.5" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 18 15 L 19.5 16.5" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 21 18 L 22.5 19.5" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+
+  <!-- 3D Hatching Lines (///) on the shaft -->
+  <path d="M 18 24 L 21 25" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 19 26 L 22 27" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 20 28 L 23 29" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 21 30 L 24 31" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 22 32 L 25 33" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+
+  <!-- 3D Hatching Lines on left wing bottom -->
+  <path d="M 8 26 L 9.5 27.5" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M 10 24.5 L 11.5 26" stroke="#D9532F" stroke-width="1.1" stroke-linecap="round" />
+
+  <!-- Main Cursor Body (Warm Highlighter Yellow/Cream on Hover) -->
+  <path
+    d="M 6.5 4.5 L 6.5 24.5 L 11.5 21.5 L 17.5 32 L 22.5 29.5 L 16.5 18.5 L 23.5 18.5 Z"
+    fill="#FEF08A"
+    stroke="#171717"
+    stroke-width="2"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+
+  <!-- Doodle Sparkles & Accents (Active Pop on Hover) -->
+  <!-- Top-left tip sparkle -->
+  <path
+    d="M 4 1 C 4 2.8 4.6 3.5 6.5 3.5 C 4.6 3.5 4 4.2 4 6 C 4 4.2 3.4 3.5 1.5 3.5 C 3.4 3.5 4 2.8 4 1 Z"
+    fill="#D9532F"
+  />
+  <!-- Tiny 'x' below top-left tip -->
+  <path d="M 2 7.5 L 4 9.5 M 4 7.5 L 2 9.5" stroke="#D9532F" stroke-width="1" stroke-linecap="round" />
+
+  <!-- Top-right sparkle -->
+  <path
+    d="M 27 2 C 27 3.5 27.6 4.2 29.5 4.2 C 27.6 4.2 27 4.9 27 6.5 C 27 4.9 26.4 4.2 24.5 4.2 C 26.4 4.2 27 3.5 27 2 Z"
+    fill="#D9532F"
+  />
+
+  <!-- Right side motion doodle arcs -->
+  <path
+    d="M 28 10 C 31 12 31.5 15 29.5 17"
+    stroke="#D9532F"
+    stroke-width="1.3"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 30.5 12 C 33 14 33 17 31 19"
+    stroke="#D9532F"
+    stroke-width="1.1"
+    stroke-linecap="round"
+  />
+
+  <!-- Tiny '+' sign near right shaft -->
+  <path d="M 28 22 V 25 M 26.5 23.5 H 29.5" stroke="#D9532F" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Bottom-left sparkle -->
+  <path
+    d="M 4.5 29 C 4.5 30.5 5.1 31.2 7 31.2 C 5.1 31.2 4.5 31.9 4.5 33.5 C 4.5 31.9 3.9 31.2 2 31.2 C 3.9 31.2 4.5 30.5 4.5 29 Z"
+    fill="#D9532F"
+  />
+
+  <!-- Bottom-center sparkle -->
+  <path
+    d="M 25 35 C 25 36.3 25.5 36.9 27 36.9 C 25.5 36.9 25 37.5 25 39 C 25 37.5 24.5 36.9 23 36.9 C 24.5 36.9 25 36.3 25 35 Z"
+    fill="#D9532F"
+  />
+</svg>

@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="border-t-2 border-[#222222] bg-[#F1EEDD]/60 pt-12 pb-10">
+    <footer className="border-t-2 border-[#222222] bg-[#F1EEDD]/60 pt-12 pb-24 md:pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start justify-between pb-8 border-b border-[#222222]/15">
           {/* Identity column */}
