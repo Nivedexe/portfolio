@@ -258,8 +258,9 @@ export const projects: Project[] = [
     problem:
       'Accounting, sales, and operations departments dealt with cumbersome multi-step spreadsheet processes to bill enterprise clients, reconcile partial payments, and issue tax-compliant invoices. The platform required a lightning-fast, keyboard-accessible frontend that handles multi-line calculations with zero margin for error.',
     technologies: [
-      'React',
+      'Next.js',
       'TypeScript',
+      'Tailwind CSS',
       'Data Tables',
       'Dynamic Form Arrays',
       'Search & Filtering',
@@ -268,6 +269,7 @@ export const projects: Project[] = [
       'Export Utilities',
     ],
     keyContributions: [
+      'Developed responsive Next.js and TypeScript interfaces with API integration for billing, account management, and customer/client modules, styled with Tailwind CSS.',
       'Developed dynamic, reactive Invoice Builder forms supporting real-time line-item tax calculations, discounts, and currency formatting.',
       'Built multi-faceted Transaction History tables with instant search, date range pickers, status filters, and CSV/PDF export hooks.',
       'Engineered reusable modal dialogs, drawer panels, and confirmation workflows for credit note issuance and balance adjustments.',
@@ -275,6 +277,7 @@ export const projects: Project[] = [
       'Designed responsive dashboard metric cards highlighting accounts receivable, aging buckets, and outstanding balances.',
     ],
     technicalHighlights: [
+      'Engineered responsive Next.js application architecture with optimized client-side state transitions and clean REST API integration.',
       'Memoized mathematical evaluation engines ensuring instant invoice total recalculations without lag on 50+ line item orders.',
       'Robust form state management using controlled inputs with inline field-level validation and error tooltips.',
       'Comprehensive table virtualization maintaining 60fps scrolling on datasets exceeding several thousand historical records.',

@@ -28,13 +28,14 @@ export const experiences: ExperienceItem[] = [
     companyPlaceholder: '[Business & Client Engagements]',
     context: 'Data-Heavy Business Interfaces & CRM/Billing',
     isCurrent: false,
-    doodleNote: 'lots of dense tables & forms',
+    doodleNote: 'Next.js · dense tables & forms',
     highlights: [
+      'Developed responsive Next.js and TypeScript interfaces with REST API integration for billing, account management, and customer/client modules, styled with Tailwind CSS.',
       'Engineered interactive CRM and billing workflows for financial invoices, client transaction histories, and ledger reconciliations.',
       'Built complex dynamic form arrays with real-time tax and multi-item calculation logic.',
       'Delivered responsive dashboard views with quick search, filtering, and export capabilities.',
     ],
-    technologies: ['React', 'TypeScript', 'Responsive UI', 'REST APIs', 'Component Systems'],
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Responsive UI', 'REST APIs', 'Component Systems'],
   },
   {
     id: 'exp-erehab',

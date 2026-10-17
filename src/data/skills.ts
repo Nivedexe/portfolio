@@ -8,6 +8,7 @@ export const skillCategories: SkillCategory[] = [
     doodleAnnotation: 'my main playground ✦',
     skills: [
       { name: 'React', highlight: true, tag: 'Core' },
+      { name: 'Next.js', highlight: true, tag: 'Framework' },
       { name: 'TypeScript', highlight: true, tag: 'Core' },
       { name: 'JavaScript (ES6+)', highlight: true, tag: 'Core' },
       { name: 'Tailwind CSS', highlight: true, tag: 'Styling' },
